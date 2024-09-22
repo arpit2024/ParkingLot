@@ -5,11 +5,11 @@ import java.util.Date;
 public class Ticket extends BaseModel{
 
    private Date entryTime;
-   private Gate gate;
+   private Gate gate;//Gate will contain the current gate at which the ticket was issued
    //Gate will contain the current operator at the gate
    //this operator will contain the operator details who was present at the gate when the ticket was issued
    private Operator operator;
-   private ParkingSlot parkingSlot;
+   private ParkingSlot parkingSlot;//ticket contain the parking slot at which the ticket was issued
    private Vehicle vehicle;
    private ParkingFloor parkingFloor;
 

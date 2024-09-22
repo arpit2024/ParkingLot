@@ -2,9 +2,11 @@ package models;
 
 public class SupportedVehicleType {
 
-    private VehicleType type;
+    private VehicleType type;// VehicleType.CAR, VehicleType.TRUCK, VehicleType.ELECTRIC
 
-    private int capacity;
+    private int capacity;// number of vehicles of this type that can be parked
+
+
 
     public VehicleType getType() {
         return type;

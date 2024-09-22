@@ -4,11 +4,12 @@ import java.util.List;
 
 public class ParkingFloor extends BaseModel{
 
-    private String floorNumber;
+    private String floorNumber;//ParkingFloor has a floor number
+    private List<ParkingSlot> parkingSlots;//ParkingFloor has many parking slots
+    private ParkingFloorStatus parkingFloorStatus;//ParkingFloor has a status of parking floor
+    private List<SupportedVehicleType> supportedVehicleTypes;//ParkingFloor supports many vehicle types
 
-    private List<ParkingSlot> parkingSlots;
-    private ParkingFloorStatus parkingFloorStatus;
-    private List<SupportedVehicleType> supportedVehicleTypes;
+
 
     public String getFloorNumber() {
         return floorNumber;

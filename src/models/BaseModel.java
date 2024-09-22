@@ -4,18 +4,18 @@ import java.util.Date;
 
 public abstract class BaseModel {
 
-    private int id;
+    private int id;//every model should have id
     private Date createdAt;
     private Date updatedAt;
+
+
 
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public Date getCreatedAt() {
         return createdAt;
     }

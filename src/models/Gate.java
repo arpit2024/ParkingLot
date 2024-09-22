@@ -8,7 +8,8 @@ public class Gate extends BaseModel{
 
     private GateType gateType;
 
-    private GateStatus gateStatus;
+    private GateStatus gateStatus;//OPEN, CLOSED, UNDER_MAINTAINANCE
+
 
     public String getGateNumber() {
         return gateNumber;

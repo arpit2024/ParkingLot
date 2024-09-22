@@ -5,10 +5,12 @@ import java.util.Date;
 public class Payment {
     private int id;
     private int amount;
-    private Date time;
-    private PaymentStatus status;
-    private PaymentMode paymentMode;
-    private String RefNumber;
+    private Date time;// Date and Time of Payment
+    private PaymentStatus status;// Status of Payment whether it is successful or not
+    private PaymentMode paymentMode;// Mode of Payment whether it is by card, cash, etc.
+    private String RefNumber;// Reference Number of the Payment
+
+
 
     public int getId() {
         return id;

@@ -8,10 +8,12 @@ public class Bill extends  BaseModel{
     private Date exitDate;
 
     private int amount;
-    private Gate gate;
-    private Operator operator;
+    private Gate gate;//this is the gate from which the user is exiting/entering
+    private Operator operator;//this is the operator who is managing the gate
     private Ticket ticket;
-    private List<Payment> payments;//here instead of using single payment we can use list of payments,
+    private List<Payment> payments;//here instead of using single payment we can use list of payments
+
+
 
     public Date getExitDate() {
         return exitDate;
