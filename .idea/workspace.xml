@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2b90a88-8b4e-422c-a9af-17320aee2b86" name="Changes" comment="issuing a Parking Ticket">
-      <change afterPath="$PROJECT_DIR$/src/Repository/ParkingLotRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/SlotAssignmentStrategyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stratagies/RandomSlotAssignmentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stratagies/SlotAssignmentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stratagies/SlotAssignmentStrategyFactory.java" afterDir="false" />
+    <list default="true" id="f2b90a88-8b4e-422c-a9af-17320aee2b86" name="Changes" comment="Slot Assigning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Gate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Gate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ParkingSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ParkingSlot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,21 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Client.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +68,7 @@
       <workItem from="1726942376368" duration="3608000" />
       <workItem from="1727008193673" duration="10991000" />
       <workItem from="1727182289229" duration="24000" />
-      <workItem from="1727182346367" duration="11909000" />
+      <workItem from="1727182346367" duration="14183000" />
     </task>
     <task id="LOCAL-00001" summary="issuing a Parking Ticket">
       <option name="closed" value="true" />
@@ -89,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727194962604</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Slot Assigning">
+      <option name="closed" value="true" />
+      <created>1727198423684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727198423684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="issuing a Parking Ticket" />
-    <option name="LAST_COMMIT_MESSAGE" value="issuing a Parking Ticket" />
+    <MESSAGE value="Slot Assigning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slot Assigning" />
   </component>
 </project>

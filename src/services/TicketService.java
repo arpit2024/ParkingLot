@@ -42,7 +42,7 @@ public class TicketService {
         if(gate==null){
             throw new IllegalArgumentException ("Gate not found");
         }
-        or use optional for both repository and in serveice for the instance */
+        or use optional for both repository and in service for the instance */
         if(gateOptional.isEmpty()){
             throw new IllegalArgumentException("Gate not found");
         }
