@@ -1,8 +1,10 @@
 package services;
 
 import Repository.GateRepository;
+import Repository.TicketRepository;
 import Repository.VehicleRepository;
 import models.*;
+import stratagies.SlotAssignmentStrategyFactory;
 
 import java.util.Date;
 import java.util.Optional;
@@ -10,11 +12,15 @@ import java.util.Optional;
 public class TicketService {
     private GateRepository gateRepository;
     private VehicleRepository vehicleRepository;
+    private TicketRepository ticketRepository;
 
-    public TicketService(GateRepository gateRepository,VehicleRepository vehicleRepository){
+    public TicketService(GateRepository gateRepository,VehicleRepository vehicleRepository,TicketRepository ticketRepository){
         this.gateRepository=gateRepository;
         this.vehicleRepository=vehicleRepository;
+        this.ticketRepository = ticketRepository;
     }
+
+
     public Ticket issueTicket(
         int gateId,
         String vehicleNumber,
@@ -60,8 +66,16 @@ public class TicketService {
         ticket.setVehicle(vehicle);
 
         // 2. Assign Slot
-        //Return the data
-        return null;
+        ParkingLot parkingLot = gate.getParkingLot();
+
+        ParkingSlot parkingSlot =
+                SlotAssignmentStrategyFactory
+                        .getSlotAssignmentStrategyByType(parkingLot.getSlotAssignmentStrategyType())
+                        .assignSlot(parkingLot,vehicleType);
+
+        ticket.setParkingSlot(parkingSlot);
+        // 3. Return the data
+        return ticketRepository.save(ticket);
     }
 }
 

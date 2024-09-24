@@ -6,13 +6,10 @@ public class IssueTicketRequestDto {
 
 
     private int gateId;
-
-    private String VehicleNumber;
-
+    private String vehicleNumber;
     private String ownerName;
-
     private VehicleType vehicleType;
-
+//    private int parkingLotId;
 
     public int getGateId() {
         return gateId;
@@ -23,11 +20,11 @@ public class IssueTicketRequestDto {
     }
 
     public String getVehicleNumber() {
-        return VehicleNumber;
+        return vehicleNumber;
     }
 
     public void setVehicleNumber(String vehicleNumber) {
-        VehicleNumber = vehicleNumber;
+        vehicleNumber = vehicleNumber;
     }
 
     public String getOwnerName() {

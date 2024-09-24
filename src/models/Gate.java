@@ -3,13 +3,19 @@ package models;
 public class Gate extends BaseModel{
 
     private String gateNumber;
-
     private Operator operator;
-
     private GateType gateType;
-
     private GateStatus gateStatus;//OPEN, CLOSED, UNDER_MAINTAINANCE
+    private ParkingLot parkingLot;
 
+
+    public ParkingLot getParkingLot() {
+        return parkingLot;
+    }
+
+    public void setParkingLot(ParkingLot parkingLot) {
+        this.parkingLot = parkingLot;
+    }
 
     public String getGateNumber() {
         return gateNumber;

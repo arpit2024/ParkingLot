@@ -12,7 +12,16 @@ public class ParkingLot extends BaseModel{
     //Don't use hashmap it is more complex to handle, better create a new class for this
     //becoz in future whenever a new feature needs to be added to a vehicle type,then in hashMap we need to crate a new HashMap<HashMap<HashMap........
     private List<SupportedVehicleType> supportedVehicleTypes;
+    private SlotAssignmentStrategyType slotAssignmentStrategyType;
 
+
+    public SlotAssignmentStrategyType getSlotAssignmentStrategyType() {
+        return slotAssignmentStrategyType;
+    }
+
+    public void setSlotAssignmentStrategyType(SlotAssignmentStrategyType slotAssignmentStrategyType) {
+        this.slotAssignmentStrategyType = slotAssignmentStrategyType;
+    }
 
     public String getName() {
         return name;

@@ -17,7 +17,7 @@ public class TicketController {
 
 //currently we are not catching any exception here and returning the response directly to the client instead apply try catch block
     //Ticket issueTicket(){
-    IssueTicketResponseDto issueTicket(IssueTicketRequestDto request){
+    public IssueTicketResponseDto issueTicket(IssueTicketRequestDto request){
         IssueTicketResponseDto response =new IssueTicketResponseDto();
         //basic validation if any can be done here
 

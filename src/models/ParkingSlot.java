@@ -2,10 +2,10 @@ package models;
 
 import java.util.List;
 
-public class ParkingSlot {
+public class ParkingSlot extends BaseModel {
 
     private String slotNumber;//ParkingSlot has a slot number
-    private ParkingLotStatus parkingLotStatus;//ParkingSlot has a status of parking slot which can be open or closed
+    private ParkingSlotStatus parkingSlotStatus;//ParkingSlot has a status of parking slot which can be open or closed
     private List<SupportedVehicleType> vehicleTypes;//ParkingSlot supports many vehicle types
     private ParkingFloor parkingFloor;//ParkingSlot belongs to a parking floor
 
@@ -27,12 +27,12 @@ public class ParkingSlot {
         this.slotNumber = slotNumber;
     }
 
-    public ParkingLotStatus getParkingLotStatus() {
-        return parkingLotStatus;
+    public ParkingSlotStatus getParkingSlotStatus() {
+        return parkingSlotStatus;
     }
 
-    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
-        this.parkingLotStatus = parkingLotStatus;
+    public void setParkingSlotStatus(ParkingSlotStatus parkingSlotStatus) {
+        this.parkingSlotStatus = parkingSlotStatus;
     }
 
     public List<SupportedVehicleType> getVehicleTypes() {
